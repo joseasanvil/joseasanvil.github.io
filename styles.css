@@ -108,14 +108,10 @@ img {
 }
 
 .brand-mark {
-  display: grid;
   width: 40px;
   aspect-ratio: 1;
-  place-items: center;
   border-radius: 6px;
-  background: var(--ink);
-  color: var(--bg);
-  font-size: 0.9rem;
+  object-fit: cover;
 }
 
 .nav-links {
