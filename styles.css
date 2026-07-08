@@ -881,3 +881,348 @@ h3 {
     animation-iteration-count: 1 !important;
   }
 }
+
+.resume-page {
+  background: var(--surface);
+}
+
+.resume-main {
+  width: min(100% - 2rem, var(--max-width));
+  margin: 0 auto;
+}
+
+.resume-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  padding: 5rem 0 4rem;
+  gap: 3rem;
+}
+
+.resume-hero h1 {
+  max-width: none;
+  margin-bottom: 0.7rem;
+  color: var(--forest-deep);
+  font-size: 4rem;
+}
+
+.resume-title {
+  margin-bottom: 1rem;
+  color: var(--sea-dark);
+  font-size: 1.1rem;
+  font-weight: 850;
+}
+
+.resume-summary {
+  max-width: 800px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.resume-actions {
+  display: grid;
+  min-width: 180px;
+  gap: 0.6rem;
+}
+
+.resume-section {
+  border-top: 1px solid var(--line);
+  padding: 4rem 0;
+  scroll-margin-top: 70px;
+}
+
+.resume-section-heading {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  align-items: baseline;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+
+.resume-section-heading .section-kicker,
+.resume-section-heading h2 {
+  margin-bottom: 0;
+}
+
+.resume-skill-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-block: 1px solid var(--line);
+}
+
+.resume-skill-grid article {
+  padding: 1.35rem 1.35rem 1.35rem 0;
+}
+
+.resume-skill-grid article:nth-child(even) {
+  border-left: 1px solid var(--line);
+  padding-right: 0;
+  padding-left: 1.35rem;
+}
+
+.resume-skill-grid article:nth-child(n + 3) {
+  border-top: 1px solid var(--line);
+}
+
+.resume-skill-grid p,
+.education-list p,
+.resume-project-grid p,
+.resume-additional-grid p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.resume-entries {
+  display: grid;
+}
+
+.resume-entry {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  border-top: 1px solid var(--line);
+  padding: 1.6rem 0;
+  gap: 2rem;
+}
+
+.resume-entry:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.resume-entry-meta {
+  display: grid;
+  align-content: start;
+  gap: 0.25rem;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.resume-entry-meta time,
+.resume-entry-meta .resume-date {
+  color: var(--sea-dark);
+  font-weight: 900;
+}
+
+.resume-organization {
+  margin-bottom: 0.7rem;
+  color: var(--leaf);
+  font-weight: 800;
+}
+
+.resume-entry ul,
+.resume-additional-grid ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+}
+
+.resume-entry li + li,
+.resume-additional-grid li + li {
+  margin-top: 0.35rem;
+}
+
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.education-list article,
+.resume-project-grid article {
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--sea);
+  border-radius: 8px;
+  padding: 1.2rem;
+}
+
+.education-list time {
+  color: var(--coral);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.education-list h3 {
+  margin-top: 0.45rem;
+}
+
+.resume-publications {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resume-publications li {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  border-top: 1px solid var(--line);
+  padding: 0.9rem 0;
+  gap: 1rem;
+}
+
+.resume-publications li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.resume-publications time {
+  color: var(--coral);
+  font-weight: 900;
+}
+
+.resume-scholar {
+  margin-top: 1rem;
+}
+
+.resume-project-grid,
+.resume-additional-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.resume-project-grid article {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  border-top-color: var(--leaf);
+}
+
+.resume-additional-grid {
+  border-block: 1px solid var(--line);
+}
+
+.resume-additional-grid article {
+  padding: 1.35rem 1.35rem 1.35rem 0;
+}
+
+.resume-additional-grid article + article {
+  border-left: 1px solid var(--line);
+  padding-right: 0;
+  padding-left: 1.35rem;
+}
+
+.resume-final {
+  border-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .resume-hero {
+    grid-template-columns: 1fr;
+    align-items: start;
+    padding: 3.5rem 0 3rem;
+    gap: 1.5rem;
+  }
+
+  .resume-hero h1 {
+    font-size: 3rem;
+  }
+
+  .resume-actions {
+    grid-template-columns: repeat(3, max-content);
+  }
+
+  .resume-section-heading {
+    grid-template-columns: 1fr;
+    gap: 0.45rem;
+  }
+
+  .resume-entry {
+    grid-template-columns: 170px minmax(0, 1fr);
+  }
+
+  .education-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .resume-main {
+    width: min(100% - 1.25rem, var(--max-width));
+  }
+
+  .resume-hero h1 {
+    font-size: 2.45rem;
+  }
+
+  .resume-actions,
+  .resume-skill-grid,
+  .resume-project-grid,
+  .resume-additional-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-actions .button {
+    width: 100%;
+  }
+
+  .resume-skill-grid article,
+  .resume-skill-grid article:nth-child(even),
+  .resume-additional-grid article,
+  .resume-additional-grid article + article {
+    border-left: 0;
+    padding: 1rem 0;
+  }
+
+  .resume-skill-grid article + article,
+  .resume-additional-grid article + article {
+    border-top: 1px solid var(--line);
+  }
+
+  .resume-entry {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .resume-publications li {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+}
+
+@media print {
+  .resume-page {
+    background: #ffffff;
+    color: #000000;
+    font-size: 10pt;
+  }
+
+  .resume-page .site-header,
+  .resume-page .site-footer,
+  .resume-actions,
+  .resume-scholar {
+    display: none;
+  }
+
+  .resume-main {
+    width: 100%;
+  }
+
+  .resume-hero {
+    padding: 0 0 1.5rem;
+  }
+
+  .resume-hero h1 {
+    font-size: 28pt;
+  }
+
+  .resume-section {
+    break-inside: avoid;
+    padding: 1.2rem 0;
+  }
+
+  .resume-section-heading {
+    margin-bottom: 0.8rem;
+  }
+
+  .resume-entry {
+    break-inside: avoid;
+    padding: 0.8rem 0;
+  }
+
+  .education-list article,
+  .resume-project-grid article {
+    break-inside: avoid;
+    border: 1px solid #bbbbbb;
+    box-shadow: none;
+  }
+}

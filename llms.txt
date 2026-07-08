@@ -1,0 +1,48 @@
+# Jose A. Sanchez Viloria
+
+> Jose Sanchez Viloria is a wireless systems researcher, computer engineer, and Ph.D. candidate specializing in AI-assisted secure communications, 5G, software-defined radio, RF machine learning, physical-layer security, and large-scale wireless testbeds.
+
+## Primary pages
+
+- [Professional profile](https://joseasanvil.com/): Research, experience, projects, publications, technical skills, and contact information.
+- [HTML resume](https://joseasanvil.com/resume.html): Crawlable professional experience, education, publications, projects, awards, languages, and technical skills.
+- [PDF resume](https://joseasanvil.com/Resume/Resume_Full.pdf): Downloadable full resume.
+
+## Expertise
+
+- AI-assisted secure wireless communications
+- 5G and 5G NR
+- Software-defined radio, GNU Radio, USRP, and PySDR
+- RF machine learning and automatic modulation classification
+- Physical-layer key generation and authentication
+- OpenAirInterface, O-RAN, NVIDIA Aerial, and Sionna
+- CAAI SDR and 5G testbeds
+- PAWR large- and city-scale wireless deployments
+- Embedded systems, IoT, robotics, and distributed systems
+- Python, C++, C, Java, MATLAB, SQL, Docker, and AWS
+
+## Experience
+
+- Graduate Research Assistant, Center for Connected Autonomy and Artificial Intelligence at Florida Atlantic University
+- Wireless Software Engineer Intern, Apple
+- Software Development Engineer Co-Op, Amazon Robotics
+- Research Assistant, Lab in a Window
+- Systems Administrator, Latin American and Caribbean Consortium of Engineering Institutions
+
+## Education
+
+- Ph.D. candidate in Computer Engineering, Florida Atlantic University
+- M.S. in Computer Engineering, Florida Atlantic University
+- B.S. in Computer Engineering, Florida Atlantic University
+
+## Verified profiles
+
+- [LinkedIn](https://www.linkedin.com/in/joseasanvil/)
+- [GitHub](https://github.com/joseasanvil)
+- [Google Scholar](https://scholar.google.com/citations?user=gy3Jg84AAAAJ&hl=en)
+- [ORCID](https://orcid.org/0000-0002-3827-1290)
+
+## Contact
+
+- Email: joseasanvil@gmail.com
+- Website: https://joseasanvil.com/
