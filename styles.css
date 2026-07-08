@@ -110,7 +110,7 @@ img {
 .brand-mark {
   width: 40px;
   aspect-ratio: 1;
-  border-radius: 6px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -251,6 +251,11 @@ h3 {
 .icon-button {
   width: 44px;
   aspect-ratio: 1;
+}
+
+.brand-icon {
+  width: 1.1rem;
+  height: 1.1rem;
 }
 
 .hero-visual {

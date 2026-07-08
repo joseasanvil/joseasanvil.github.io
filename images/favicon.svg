@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="30" fill="#161815"/>
+  <circle cx="51" cy="13" r="5" fill="#e65f4d"/>
+  <text
+    x="32"
+    y="40"
+    fill="#fbfaf7"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="23"
+    font-weight="700"
+    text-anchor="middle"
+  >JS</text>
+</svg>
