@@ -530,6 +530,19 @@ h3 {
   color: var(--coral);
 }
 
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 1rem;
+  gap: 0.65rem 1rem;
+}
+
+.project-links .text-link {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .publications-heading {
   align-items: center;
 }

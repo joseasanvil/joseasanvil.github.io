@@ -29,6 +29,14 @@
 - Research Assistant, Lab in a Window
 - Systems Administrator, Latin American and Caribbean Consortium of Engineering Institutions
 
+## Project links
+
+- [Agora Meetings](https://agorameetings.com/): Virtual and hybrid conference platform.
+- [GR-PHYSEC repository](https://github.com/C2A2-at-Florida-Atlantic-University/gr-PHYSEC): Real-time physical-layer key generation tooling.
+- [GR-PHYSEC video demo](https://www.youtube.com/watch?v=jmUSkdDfkf4)
+- [Garbage collector robot video](https://youtu.be/-jjr3Q6iX1g)
+- [Disinfectant robot video](https://youtu.be/2dCFa2TB4)
+
 ## Education
 
 - Ph.D. candidate in Computer Engineering, Florida Atlantic University
