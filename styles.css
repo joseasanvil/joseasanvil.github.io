@@ -572,6 +572,20 @@ h3 {
   font-weight: 900;
 }
 
+.publication-link {
+  color: var(--ink);
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-color: rgba(20, 127, 134, 0.42);
+  text-underline-offset: 3px;
+}
+
+.publication-link:hover,
+.publication-link:focus-visible {
+  color: var(--sea-dark);
+  text-decoration-color: currentColor;
+}
+
 .skill-group {
   border-top-color: var(--sea);
   background: rgba(255, 255, 255, 0.72);
