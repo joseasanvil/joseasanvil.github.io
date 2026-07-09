@@ -1,3 +1,5 @@
+document.documentElement.classList.add("has-js");
+
 const year = document.querySelector("#year");
 
 if (year) {
@@ -16,7 +18,7 @@ const sections = navLinks
   .filter(Boolean);
 
 if ("IntersectionObserver" in window && sections.length > 0) {
-  const observer = new IntersectionObserver(
+  const navObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) {
@@ -34,5 +36,36 @@ if ("IntersectionObserver" in window && sections.length > 0) {
     }
   );
 
-  sections.forEach((section) => observer.observe(section));
+  sections.forEach((section) => navObserver.observe(section));
+}
+
+/*
+ * Reveal contract:
+ * Input: an element with data-reveal="up", "left", "right", or "fade".
+ * Output: is-visible is added once when the element enters the viewport.
+ * Reference: https://developer.mozilla.org/docs/Web/API/Intersection_Observer_API
+ */
+const revealElements = [...document.querySelectorAll("[data-reveal]")];
+
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    {
+      threshold: 0.12
+    }
+  );
+
+  revealElements.forEach((element) => revealObserver.observe(element));
+} else {
+  // Fallback: show all content when IntersectionObserver is unavailable.
+  revealElements.forEach((element) => element.classList.add("is-visible"));
 }

@@ -884,17 +884,6 @@ h3 {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-  }
-}
-
 .resume-page {
   background: var(--surface);
 }
@@ -1118,6 +1107,32 @@ h3 {
   border-bottom: 0;
 }
 
+/*
+ * Section reveal effects.
+ * JavaScript adds .has-js and later .is-visible as each element enters view.
+ */
+html.has-js [data-reveal] {
+  opacity: 0;
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+html.has-js [data-reveal="up"] {
+  transform: translateY(28px);
+}
+
+html.has-js [data-reveal="left"] {
+  transform: translateX(-28px);
+}
+
+html.has-js [data-reveal="right"] {
+  transform: translateX(28px);
+}
+
+html.has-js [data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
 @media (max-width: 800px) {
   .resume-hero {
     grid-template-columns: 1fr;
@@ -1237,5 +1252,22 @@ h3 {
     break-inside: avoid;
     border: 1px solid #bbbbbb;
     box-shadow: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  html.has-js [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
   }
 }
