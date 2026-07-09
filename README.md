@@ -1,5 +1,5 @@
 # joseasanvil.github.io
 
-Personal website for Jose A. Sanchez Viloria, published with GitHub Pages.
+Personal website for Jose A. Sanchez Viloria.
 
-Preview at [joseasanvil.com](https://joseasanvil.com)
+Visit [joseasanvil.com](https://joseasanvil.com)
